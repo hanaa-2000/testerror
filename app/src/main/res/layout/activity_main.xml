@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="#ACEADA"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="370dp"
+        android:layout_height="550dp"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="20dp"
+        tools:ignore="ExtraText"
+        android:padding="30dp"
+        android:layout_margin="20dp"
+        android:isScrollContainer="true"
+        app:cardElevation="60dp"
+        android:background="@drawable/back_gro2"
+
+        >
+
+        <ImageView
+            android:id="@+id/imagedelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            card_view:srcCompat="@drawable/ic_baseline_delete_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat"
+            android:tint="#8956E6"
+            android:layout_marginLeft="320dp"
+            />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imgecirclar"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/images__13_"
+            app:civ_border_color="#3f51b5"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#3f51b5"
+            app:civ_shadow_radius="10dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@id/imgecirclar"
+            android:text="Hanaa NasseF"
+            android:textColor="#222"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            tools:ignore="RtlCompat"
+           />
+
+        <ImageView
+            android:id="@+id/imageba"
+            android:layout_width="385dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="160dp"
+            app:srcCompat="@drawable/images__5_"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="420dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:numStars="5"
+                android:rating="1"
+                android:stepSize="0.5"
+                android:layout_gravity="center"
+                android:layout_marginStart="50dp"
+                android:backgroundTint="#C6FF00"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="480dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imagelove"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                card_view:srcCompat="@drawable/love"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12k"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_baseline_mode_comment_24"
+                tools:ignore="ContentDescription,UseAppTint,VectorDrawableCompat"
+                android:tint="#808081"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageshare"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_weight="1"
+                android:tint="#4D1FA1"
+                card_view:srcCompat="@drawable/ic_baseline_share_24"
+                tools:ignore="UseAppTint,VectorDrawableCompat" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="370dp"
+        android:layout_height="550dp"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="20dp"
+        tools:ignore="DuplicateIds,ExtraText"
+        android:padding="30dp"
+        android:layout_margin="20dp"
+        android:isScrollContainer="true"
+        app:cardElevation="60dp"
+        android:background="@drawable/back_gro2"
+
+        >
+
+        <ImageView
+            android:id="@+id/imagedelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            card_view:srcCompat="@drawable/ic_baseline_delete_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat"
+            android:tint="#8956E6"
+            android:layout_marginLeft="320dp"
+            />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imgecirclar"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/images__13_"
+            app:civ_border_color="#3f51b5"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#3f51b5"
+            app:civ_shadow_radius="10dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@id/imgecirclar"
+            android:text="Hanaa NasseF"
+            android:textColor="#222"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            tools:ignore="RtlCompat"
+            />
+
+        <ImageView
+            android:id="@+id/imageba"
+            android:layout_width="385dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="160dp"
+            app:srcCompat="@drawable/images__15_"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="420dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:numStars="5"
+                android:rating="1"
+                android:stepSize="0.5"
+                android:layout_gravity="center"
+                android:layout_marginStart="50dp"
+                android:backgroundTint="#C6FF00"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="480dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imagelove"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                card_view:srcCompat="@drawable/love"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30k"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_baseline_mode_comment_24"
+                tools:ignore="ContentDescription,UseAppTint,VectorDrawableCompat"
+                android:tint="#808081"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageshare"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_weight="1"
+                android:tint="#4D1FA1"
+                card_view:srcCompat="@drawable/ic_baseline_share_24"
+                tools:ignore="UseAppTint,VectorDrawableCompat" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="370dp"
+        android:layout_height="550dp"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="20dp"
+        tools:ignore="DuplicateIds,ExtraText"
+        android:padding="30dp"
+        android:layout_margin="20dp"
+        android:isScrollContainer="true"
+        app:cardElevation="60dp"
+        android:background="@drawable/back_gro2"
+
+        >
+
+        <ImageView
+            android:id="@+id/imagedelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            card_view:srcCompat="@drawable/ic_baseline_delete_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat"
+            android:tint="#8956E6"
+            android:layout_marginLeft="320dp"
+            />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imgecirclar"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/images__13_"
+            app:civ_border_color="#3f51b5"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#3f51b5"
+            app:civ_shadow_radius="10dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@id/imgecirclar"
+            android:text="Hanaa NasseF"
+            android:textColor="#222"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            tools:ignore="RtlCompat"
+            />
+
+        <ImageView
+            android:id="@+id/imageba"
+            android:layout_width="385dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="160dp"
+            app:srcCompat="@drawable/images__14_"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="420dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:numStars="5"
+                android:rating="1"
+                android:stepSize="0.5"
+                android:layout_gravity="center"
+                android:layout_marginStart="50dp"
+                android:backgroundTint="#C6FF00"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="480dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imagelove"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                card_view:srcCompat="@drawable/love"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26k"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_baseline_mode_comment_24"
+                tools:ignore="ContentDescription,UseAppTint,VectorDrawableCompat"
+                android:tint="#808081"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageshare"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_weight="1"
+                android:tint="#4D1FA1"
+                card_view:srcCompat="@drawable/ic_baseline_share_24"
+                tools:ignore="UseAppTint,VectorDrawableCompat" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="370dp"
+        android:layout_height="550dp"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="20dp"
+        tools:ignore="DuplicateIds,ExtraText"
+        android:padding="30dp"
+        android:layout_margin="20dp"
+        android:isScrollContainer="true"
+        app:cardElevation="60dp"
+        android:background="@drawable/back_gro2"
+
+        >
+
+        <ImageView
+            android:id="@+id/imagedelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            card_view:srcCompat="@drawable/ic_baseline_delete_24"
+            tools:ignore="UseAppTint,VectorDrawableCompat"
+            android:tint="#8956E6"
+            android:layout_marginLeft="320dp"
+            />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imgecirclar"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/images__13_"
+            app:civ_border_color="#3f51b5"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#3f51b5"
+            app:civ_shadow_radius="10dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@id/imgecirclar"
+            android:text="Hanaa NasseF"
+            android:textColor="#222"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            tools:ignore="RtlCompat"
+            />
+
+        <ImageView
+            android:id="@+id/imageba"
+            android:layout_width="385dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="160dp"
+            app:srcCompat="@drawable/images__19_"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="420dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:numStars="5"
+                android:rating="1"
+                android:stepSize="0.5"
+                android:layout_gravity="center"
+                android:layout_marginStart="50dp"
+                android:backgroundTint="#C6FF00"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="480dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imagelove"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                card_view:srcCompat="@drawable/love"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80k"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_baseline_mode_comment_24"
+                tools:ignore="ContentDescription,UseAppTint,VectorDrawableCompat"
+                android:tint="#808081"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageshare"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_weight="1"
+                android:tint="#4D1FA1"
+                card_view:srcCompat="@drawable/ic_baseline_share_24"
+                tools:ignore="UseAppTint,VectorDrawableCompat" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>
+</ScrollView>
